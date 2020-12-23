@@ -1,0 +1,24 @@
+{
+  "name": "jokeapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbilalbhattirajpoot/jokeapi.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mbilalbhattirajpoot/jokeapi/issues"
+  },
+  "homepage": "https://github.com/mbilalbhattirajpoot/jokeapi#readme"
+}
