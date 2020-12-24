@@ -14,10 +14,9 @@ app.get('/jokes', (req, res) => {
     .then(response => {
       console.log(response.data.url);
       console.log(response.data.explanation);
-      res.send(response.data.setup);
       console.log(response.data.setup);
-      res.send(response.data.delivery);
       console.log(response.data.delivery);
+      res.send(response.data.setup+response.data.delivery);
       //console.log(response.data.category);
       // console.log(response.data.flags.religious);
       // console.log(response.data.flags.political);
