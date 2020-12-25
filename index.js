@@ -5,7 +5,8 @@ const app = express()
 
 //axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY')
 
-app.listen(3200, () => {
+const port= process.env.port || 3200;
+app.listen(port, () => {
   console.log("works!")
 })
 
@@ -16,7 +17,8 @@ app.get('/jokes', (req, res) => {
       console.log(response.data.explanation);
       console.log(response.data.setup);
       console.log(response.data.delivery);
-      res.send(response.data.setup+response.data.delivery);
+      console.log(response.data.category);
+      res.send(response.data.setup + response.data.delivery);
       //console.log(response.data.category);
       // console.log(response.data.flags.religious);
       // console.log(response.data.flags.political);
